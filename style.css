@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  
+  min-height: 100vh;
+  font-family: "TASA Orbiter", sans-serif;
+  padding: 20px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 10px;
+    align-items: center;
+    
+}
+
+.main-logo{
+    width: 70px;
+}
+
+.header-language{
+    font-size: medium;
+    font-weight: bold;
+}
+
+.main-title{
+      font-family: "Cormorant Garamond", serif;
+      font-weight: 900;
+      font-size: 30px;
+}
+.age-modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top :0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.age-modal-content {
+  background: #ffffff;
+  padding: 48px;
+  max-width: 450px;
+  width: 90%;
+  text-align: center;
+  border-radius: 16px;
+}
+
+.age-notice {
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+
+.age-modal-content p {
+    padding-bottom: 30px;
+
+}
+
+.age-verification-form {
+  text-align: left;
+}
+
+
+.age-error-message {
+  color: red;
+  font-size: 0.875rem;
+  display: block;
+  margin-bottom: 20px;
+  min-height: 1.25rem;
+}
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-container {
+  
+  background-color: #ededed;
+  backdrop-filter: blur(12px);
+  padding: 30px;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.age-modal-content h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #000;
+  font-weight: 600;
+}
+
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #000;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  border: solid #e2e2e2 1px;
+  border-radius: 4px;
+  outline: none;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.9);
+
+}
+
+input:focus,
+select:focus {
+  border: 2px solid #667eea;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  background-color: #000;
+  border: none;
+  color: wheat;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 1px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.3s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.error {
+  color: red;
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+.success {
+  color: green;
+  font-size: 15px;
+  text-align: center;
+  margin-top: 15px;
+  font-weight: 500;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

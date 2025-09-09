@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zoho School of Graduation Application</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=TASA+Orbiter:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-logo">
+        <img class="main-logo" src="public/logo.jpg" alt="" />
+      </div>
+      <div class="header-language">EN</div>
+    </div>
+
+    <div id="ageVerificationModal" class="age-modal">
+      <div class="age-modal-content">
+        <h2>Age Verification Required</h2>
+        <p>
+          You must be at least 21 years old and at most 26 years old to access
+          this student application form.
+        </p>
+
+        <div class="age-verification-form">
+          <label for="birthYear">Enter your birth year:</label>
+          <input
+            type="number"
+            id="birthYear"
+            min="1900"
+            max="2010"
+            placeholder="YYYY"
+          />
+          <span class="age-error-message"></span>
+          <button type="button" id="verifyAgeBtn" class="age-verify-btn">
+            Verify Age
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <div class="form-container">
+        <form id="zohoForm">
+          <h2>Zoho School for Graduate Studies Application Form</h2>
+
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input
+              type="text"
+              id="firstName"
+              placeholder="Enter first name"
+              required
+            />
+            <div class="error" id="firstNameError"></div>
+          </div>
+
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input
+              type="text"
+              id="lastName"
+              placeholder="Enter last name"
+              required
+            />
+            <div class="error" id="lastNameError"></div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email"
+              required
+            />
+            <div class="error" id="emailError"></div>
+          </div>
+
+          <div class="form-group">
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" required />
+            <div class="error" id="dobError"></div>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input
+              type="text"
+              id="phone"
+              placeholder="Enter 10-digit phone"
+              required
+            />
+            <div class="error" id="phoneError"></div>
+          </div>
+
+          <div class="form-group">
+            <label for="passOut">Year of Pass Out</label>
+            <input
+              type="number"
+              id="passOut"
+              placeholder="e.g. 2023"
+              required
+            />
+            <div class="error" id="passOutError"></div>
+          </div>
+
+          <button type="submit" id="submit">Submit</button>
+          <p class="success" id="successMsg"></p>
+        </form>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
